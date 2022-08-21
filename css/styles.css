@@ -1,0 +1,490 @@
+/* Палітра кольорів сайту */
+
+:root {
+  --black-color: #000000;
+  --white-color: #ffffff;
+
+  --primary-text-color: #8f95a5;
+  --secondary-text-color: #2a3246;
+  --primary-title-color: #263238;
+  --secondary-bg-color: #f5f5f5;
+  --logo-color: #939393;
+}
+
+/* Загальні стилі сайту */
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  line-height: 1.8;
+
+  color: var(--primary-text-color);
+  background-color: var(--white-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.section {
+  padding-bottom: 180px;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.pic {
+  display: block;
+}
+
+.container {
+  padding: 0 20px;
+  width: 1378px;
+  margin: 0 auto;
+}
+
+/* Header */
+/* Logo */
+
+.logo {
+  margin-right: 236px;
+
+  font-size: 36px;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+
+  color: var(--logo-color);
+}
+
+.logo > span {
+  color: var(--black-color);
+}
+
+/* Navigation */
+
+.header .container {
+  display: flex;
+  align-items: center;
+  padding-top: 55px;
+  padding-bottom: 55px;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.nav-list .link {
+  font-weight: 500;
+  line-height: 1.5;
+
+  color: var(--primary-title-color);
+}
+
+.header-btn {
+  width: 312px;
+  margin-left: auto;
+  padding: 18px 56px;
+
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--black-color);
+  background-color: var(--white-color);
+  border: 2px solid #263238;
+  border-radius: 10px;
+}
+
+/* Hero */
+
+.hero .container {
+  display: flex;
+}
+
+.hero .block {
+  width: 540px;
+  margin-right: 144px;
+}
+
+.hero .title {
+  margin-bottom: 40px;
+
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 1.25;
+  text-transform: capitalize;
+
+  color: var(--black-color);
+}
+
+.hero .text {
+  margin-bottom: 60px;
+
+  font-size: 24px;
+  line-height: 1.5;
+
+  color: var(--primary-text-color);
+}
+
+.hero .hero-btn {
+  width: 426px;
+  padding: 23px 64px;
+
+  font-size: 36px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  background: var(--primary-title-color);
+  color: var(--white-color);
+  border-radius: 10px;
+}
+
+/* Sections */
+
+.title {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 1.5;
+
+  color: var(--black-color);
+}
+
+/* Skills */
+
+.skills .title {
+  text-align: center;
+}
+
+/* .skills-list {
+  display: flex;
+} */
+
+.skills-list .title {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 1.5;
+  color: var(--primary-title-color);
+  text-align: start;
+}
+
+.skills-list .text {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.skills-list .link {
+  display: inline-block;
+  border-radius: 10px;
+
+  color: var(--white-color);
+  background-color: var(--primary-title-color);
+}
+
+.speaking-skill {
+  width: 426px;
+  background: var(--secondary-bg-color);
+  border-radius: 10px;
+
+  padding-top: 32px;
+  padding-bottom: 154px;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+.speaking-skill .pic {
+  margin-bottom: 24px;
+}
+
+.speaking-skill .title {
+  margin-bottom: 20px;
+}
+
+.speaking-skill .link {
+  padding-top: 17px;
+  padding-bottom: 16px;
+  padding-left: 64px;
+  padding-right: 63px;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.speaking-skill .text {
+  margin-bottom: 30px;
+  width: 347px;
+}
+
+.writing-skill,
+.reading-skill {
+  width: 426px;
+  background: var(--secondary-bg-color);
+  border-radius: 10px;
+
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+.writing-skill .pic,
+.reading-skill .pic {
+  margin-bottom: 24px;
+}
+
+.writing-skill .title,
+.reading-skill .title {
+  margin-bottom: 20px;
+}
+
+.writing-skill .link,
+.reading-skill .link {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 52px;
+  padding-right: 51px;
+
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.writing-skill .text,
+.reading-skill .text {
+  margin-bottom: 30px;
+  width: 340px;
+}
+
+.listening-skill {
+  display: flex;
+  justify-content: space-between;
+  width: 882px;
+  background: var(--secondary-bg-color);
+  border-radius: 10px;
+
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+.listening-skill .pic {
+  margin-bottom: 24px;
+}
+
+.listening-skill .title {
+  margin-bottom: 20px;
+}
+
+.listening-skill .link {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 52px;
+  padding-right: 51px;
+
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.listening-skill .text {
+  margin-bottom: 30px;
+  width: 340px;
+}
+
+/* About Us */
+
+.about .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about .box {
+  width: 652px;
+}
+
+.about .title {
+  margin-bottom: 60px;
+}
+
+.about .text {
+  margin-bottom: 30px;
+
+  font-size: 20px;
+  line-height: 1.8;
+  color: var(--primary-text-color);
+}
+
+.about .list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.about-list .text.primary {
+  text-align: center;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 1.5;
+
+  color: var(--secondary-text-color);
+}
+
+.about-list .text.secondary {
+  text-align: center;
+  line-height: 1.5;
+}
+
+/* Pricing */
+
+.pricing .title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.pricing-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pricing-list .item {
+  width: 426px;
+}
+
+.pricing-list .pic {
+  margin-bottom: 31px;
+}
+
+.pricing-list .title {
+  text-align: start;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 1.6;
+  text-transform: capitalize;
+
+  color: var(--primary-title-color);
+}
+
+.pricing-list .text {
+  margin-bottom: 30px;
+
+  font-size: 20px;
+  line-height: 1.5;
+
+  color: var(--primary-text-color);
+}
+
+.pricing-list .box {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  width: 260px;
+  padding-top: 5px;
+  padding-bottom: 4px;
+  padding-left: 23px;
+  padding-right: 23px;
+
+  background: #eeeeee;
+  border-radius: 5px;
+}
+
+.pricing-list .primary.text {
+  margin-right: 28px;
+  margin-bottom: 0;
+  font-size: 24px;
+  line-height: 1.5;
+
+  color: var(--primary-title-color);
+}
+
+.pricing-list .secondary.text {
+  margin-bottom: 0;
+  font-size: 18px;
+  line-height: 1.5;
+
+  color: #546269;
+}
+
+/* Contact us */
+
+.contacts {
+  padding-bottom: 55px;
+}
+
+.contacts .container {
+  display: flex;
+}
+
+.contacts .pic {
+  margin-right: 144px;
+}
+
+.contacts .title {
+  margin-bottom: 60px;
+}
+
+.contacts .text {
+  width: 654px;
+  margin-bottom: 30px;
+}
+
+.contacts .btn {
+  display: block;
+  margin-left: auto;
+  width: 312px;
+  height: 70px;
+
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--white-color);
+  background-color: var(--primary-title-color);
+  border-radius: 10px;
+}
+
+/* Footer */
+
+.footer .container {
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #c4c4c4;
+  padding: 22px 0;
+}
+
+.footer-list {
+  display: flex;
+  margin-left: auto;
+}
+
+.footer-list .link {
+  font-size: 24px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+
+  color: var(--primary-text-color);
+}
+
+.footer-list .item:not(:last-child) {
+  margin-right: 80px;
+}
